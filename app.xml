@@ -1,6 +1,6 @@
 <context>
 	<input pattern="$Text">
-        <var name="wordy" value="$Text" scope="context"/> 
+        <var name="wordy" value="$Text"/> 
         <output value="Input is $wordy!"/>
   <get url="http://api.wordnik.com:80/v4/word.json/$word/definitions?">
 <param name ="word" value = "$wordy"/>
@@ -11,7 +11,7 @@
 	<param name="api_key" value="a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5"/>
 	
   </get>
-		var result = $var.text
+		var result = $wordy.text
 <output value='result'/>
 </input>
 </context>
