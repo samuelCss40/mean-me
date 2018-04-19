@@ -1,7 +1,6 @@
 <context>
 <input pattern="* (check)">
-  <get url="http://api.wordnik.com:80/v4/word.json/apple/definitions?limit=200&includeRelated=true&useCanonical=false&includeTags=false&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5" var="text">
-    
+  <get url="http://api.wordnik.com:80/v4/word.json/var/definitions?limit=200&includeRelated=true&useCanonical=false&includeTags=false&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5" var="apple">
   </get>
 
   <output value='get("temp", get("main", $text))'/>
