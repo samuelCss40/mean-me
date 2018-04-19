@@ -1,3 +1,4 @@
+<context>
 <input pattern="* (weather|forecast)">
   <get url="http://api.openweathermap.org/data/2.5/weather" var="Weather">
     <param name="APPID" value="API_KEY"/>
@@ -8,3 +9,4 @@
 
   <output value='get("temp", get("main", $Weather))'/>
 </input>
+</context>
