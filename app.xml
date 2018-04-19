@@ -1,7 +1,7 @@
 <context>
 	<input pattern="(hi|hello|hy) *">
-  <get url="http://cricapi.com/api/matches">
-	<param name="apikey" value="aZAmKczg94aHCGg9JfK5LfXWj7R2" var ="hi"/>
+  <get url=http://cricapi.com/api/matches?apikey=aZAmKczg94aHCGg9JfK5LfXWj7R2>
+	<!--param name="apikey" value="" var ="hi"/-->
   </get>
 <output value='$var'/>
 </input>
