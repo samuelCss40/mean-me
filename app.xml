@@ -1,9 +1,7 @@
 <context>
-	<input pattern="$Text">
-        <!-- Save UserName variable with the same value as Text pattern -->
-        <var name="UserName" value="$Text" scope="context"/> <!-- Define a persistence scope of variable -->
-  <get url="http://api.wordnik.com:80/v4/word.json/word/definitions?" >
-<param name ="word" value = "$UserName"/>
+	<input pattern="(hi|hello|hy) *">
+  <get url="http://api.wordnik.com:80/v4/word.json/word/definitions?" var="apple">
+<param name ="word" value = "$var"/>
   <param name="limit" value="200"/>
     <param name="includeRelated" value="true"/>
     <param name="useCanonical" value="false"/>
@@ -12,6 +10,6 @@
 	
   </get>
 
-  <output value='get("temp", get("main", $apple))'/>
+  <output value='get("temp", get("main", $var))'/>
 </input>
 </context>
