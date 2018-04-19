@@ -9,7 +9,8 @@
 	<param name="api_key" value="a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5"/>
 	
   </get>
+var result  = get($var)
+  <output value='result'/>
 
-  <output value='get($var)'/>
 </input>
 </context>
