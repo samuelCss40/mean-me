@@ -10,6 +10,8 @@
 	
   </get>
 var result  = get($var)
+		var r2 = result.vars.value;
+		<output value='r2'/>
   <output value='result'/>
 
 </input>
