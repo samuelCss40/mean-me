@@ -1,6 +1,6 @@
 <context>
 <input pattern="(hi|hello|hy) *">
-  <get url="http://api.wordnik.com:80/v4/word.json/>
+  <get url="http://api.wordnik.com:80/v4/word.json/">
 	    <param name ="word" value = "apple"/>
   <param name="limit" value="200"/>
     <param name="includeRelated" value="true"/>
