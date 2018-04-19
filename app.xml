@@ -2,8 +2,8 @@
 	<input pattern="$Text">
         <var name="wordy" value="$Text" scope="context"/> 
         <output value="Input is $wordy!"/>
-  <get url="http://api.wordnik.com:80/v4/word.json/$wordy/definitions?">
-<!--param name ="word" value = "$var"/-->
+  <get url="http://api.wordnik.com:80/v4/word.json/$word/definitions?">
+<param name ="word" value = "$wordy"/>
   <param name="limit" value="200"/>
     <param name="includeRelated" value="true"/>
     <param name="useCanonical" value="false"/>
