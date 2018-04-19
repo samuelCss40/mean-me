@@ -1,0 +1,2 @@
+# mean-me
+English dictionary
