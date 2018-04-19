@@ -3,6 +3,6 @@
   <get url="http://cricapi.com/api/matches">
 	<param name="apikey" value="aZAmKczg94aHCGg9JfK5LfXWj7R2" var ="hi"/>
   </get>
-<output value='get(json.parse($var))'/>
+<output value='get('$var')'/>
 </input>
 </context>
