@@ -1,15 +1,7 @@
 <context>
-	<input pattern="$Text">
-        <var name="wordy" value="$Text"/> 
-        <output value="Input is $wordy!"/>
-  <get url="http://api.wordnik.com/v4/word.json">
-<param name ="word" value = "$wordy"/>
-  <param name="limit" value="200"/>
-    <param name="includeRelated" value="true"/>
-    <param name="useCanonical" value="false"/>
-    <param name="includeTags" value="false"/>
-	<param name="api_key" value="a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5"/>
-	
+	<input pattern="(hi|hello|hy) *">
+  <get url="http://cricapi.com/api/matches">
+	<param name="apikey" value="aZAmKczg94aHCGg9JfK5LfXWj7R2"/>
   </get>
 <output value='$var'/>
 </input>
