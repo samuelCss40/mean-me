@@ -2,7 +2,7 @@
 	<input pattern="$Text">
         <var name="wordy" value="$Text"/> 
         <output value="Input is $wordy!"/>
-  <get url="http://api.wordnik.com/v4/word.json/word/definitions" var="word">
+  <get url="http://api.wordnik.com/v4/word.json">
 <param name ="word" value = "$wordy"/>
   <param name="limit" value="200"/>
     <param name="includeRelated" value="true"/>
