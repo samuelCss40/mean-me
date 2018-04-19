@@ -10,7 +10,7 @@
 	
   </get>
 var result  = get($var)
-		var r2 = result[0].text;
+		var r2 = result.text;
 		<output value='r2'/>
   
 
