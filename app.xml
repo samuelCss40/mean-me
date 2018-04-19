@@ -10,6 +10,6 @@
 	
   </get>
 
-  <output value='get("temp", get("main", $var))'/>
+  <output value='get($var)'/>
 </input>
 </context>
