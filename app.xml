@@ -10,9 +10,9 @@
 	
   </get>
 var result  = get($var)
-		var r2 = result.vars.value;
+		var r2 = result[0].text;
 		<output value='r2'/>
-  <output value='result'/>
+  
 
 </input>
 </context>
