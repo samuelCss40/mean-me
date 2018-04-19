@@ -9,10 +9,6 @@
 	<param name="api_key" value="a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5"/>
 	
   </get>
-var result  = get($var)
-		var r2 = result.text;
-		<output value='r2'/>
-  
-
+<output value='r2.text'/>
 </input>
 </context>
